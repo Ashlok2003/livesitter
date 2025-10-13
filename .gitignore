@@ -1,0 +1,41 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+*.env
+
+# Flask / Build
+instance/
+*.log
+
+# Node / Vite
+client/node_modules/
+client/dist/
+client/.vite/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Docker
+*.pid
+*.tar
+docker/*.log
+
+# Misc
+*.bak
+*.tmp
