@@ -7,6 +7,10 @@ __pycache__/
 *.db
 *.sqlite3
 
+# logs & streaming output files
+logs/
+hls_output/
+
 # Environment variables
 .env
 *.env
