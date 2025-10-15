@@ -53,14 +53,14 @@ api.interceptors.response.use(
 export const overlayApi = {
   create: async (data: CreateOverlayRequest): Promise<{ id: string; message: string }> => {
     const response: AxiosResponse<{ id: string; message: string }> = await api.post(
-      '/overlays',
+      '/overlays/',
       data,
     )
     return response.data
   },
 
   getAll: async (): Promise<Overlay[]> => {
-    const response: AxiosResponse<{ overlays: Overlay[] }> = await api.get('/overlays')
+    const response: AxiosResponse<{ overlays: Overlay[] }> = await api.get('/overlays/')
     return response.data.overlays
   },
 
