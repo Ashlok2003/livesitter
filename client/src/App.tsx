@@ -27,7 +27,7 @@ export default function App(): React.ReactElement {
 
   const handleStreamStart = useCallback((_url: string, streamId: string) => {
     // Use relative URL to go through Nginx proxy
-    const playlistUrl = `/api/streams/${streamId}/playlist.m3u8`
+    const playlistUrl = `${import.meta.env.VITE_API_BASE_URL}/streams/${streamId}/playlist.m3u8`
     setStreamUrl(playlistUrl)
     setActiveStream(streamId)
     // Force VideoPlayer re-render by changing key
